@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+    "http://struts.apache.org/dtds/struts-2.0.dtd">  
+ 
+<struts>  
+	<package name="default" namespace="/" extends="struts-default">
+        <action name="insertbook" class="com.action.BookInsertAction" method="insert">  
+        	<result name="success">/insert.jsp</result>  
+        	<result name="fail">/fail.jsp</result>  
+        </action>    
+        <action name="deletebook" class="com.action.BookDeleteAction" method="delete">  
+            <result name="success">/showbook.jsp</result>  
+        </action>  
+        <action name="getBookTitle" class="com.action.BookGetAction" method="getBookTitle">  
+            <result name="success">/quary.jsp</result>  
+        </action>  
+    </package>  
+</struts> 
+
